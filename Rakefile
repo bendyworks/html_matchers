@@ -25,3 +25,17 @@ Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_files.include('README')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
+
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |gemspec|
+    gemspec.name = "html_matchers"
+    gemspec.summary = "HTML entity matchers for RSpec"
+    gemspec.description = "HTML entity matchers for RSpec"
+    gemspec.email = "stephen@bendyworks.com"
+    gemspec.homepage = "http://github.com/bendyworks/html_matchers"
+    gemspec.authors = ["bendycode, helabed, listrophy"] 
+  end
+rescue LoadError
+  puts "Jeweler not available. Install it with: gem install jeweler"
+end
