@@ -36,6 +36,7 @@ begin
     gemspec.homepage = "http://github.com/bendyworks/html_matchers"
     gemspec.authors = ["bendycode, helabed, listrophy"] 
   end
+  Jeweler::GemcutterTasks.new
 rescue LoadError
   puts "Jeweler not available. Install it with: gem install jeweler"
 end
